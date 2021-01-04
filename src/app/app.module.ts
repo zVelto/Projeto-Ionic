@@ -15,6 +15,7 @@ import { ErrorInterceptorProvider } from '../interceptors/error-interceptor';
 import { AuthService } from '../Services/auth.service';
 import { ClienteService } from '../Services/domain/cliente.service';
 import { AuthInterceptorProvider } from '../interceptors/auth-interceptor';
+import { ImageUtilService } from '../Services/image-util.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { AuthInterceptorProvider } from '../interceptors/auth-interceptor';
     StorageService,
     ClienteService,
     ProdutoService,
-    CartService
+    CartService,
+    ImageUtilService
   ]
 })
 export class AppModule {}
